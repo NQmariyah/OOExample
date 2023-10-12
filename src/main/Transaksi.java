@@ -90,4 +90,10 @@ public class Transaksi {
 	public void setNamaPegawai(String namaPegawai) {
 		this.namaPegawai = namaPegawai;
 	}
+	
+	@Override
+	public String toString() {
+		String s = this.getKodeTransaksi() + " - " + this.getTotalAmt();
+		return s;
+	}
 }

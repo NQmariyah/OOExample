@@ -44,6 +44,15 @@ public class Product {
 	public void setHargaProduct(double hargaProduct) {
 		this.hargaProduct = hargaProduct;
 	}
+
+	@Override
+	public String toString() {
+		String s = this.getKodeProduct() + ". " + this.getNamaProduct() +
+				": " + this.getHargaProduct();
+		
+		//001. Roti Tawar: 10000.0
+		return s;
+	}
 	
 	
 	
